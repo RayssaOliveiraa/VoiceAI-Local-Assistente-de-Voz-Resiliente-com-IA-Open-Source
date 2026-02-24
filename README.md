@@ -1,0 +1,1 @@
+# VoiceAI-Local-Assistente-de-Voz-Resiliente-com-IA-Open-Source
