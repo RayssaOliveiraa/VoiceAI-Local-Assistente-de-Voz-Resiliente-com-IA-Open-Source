@@ -1,12 +1,12 @@
-#🎙️ Assistente de Voz Local: Evolução do Desafio DIO
+# 🎙️ Assistente de Voz Local: Evolução do Desafio DIO
 Este projeto é uma evolução do desafio prático da DIO (Digital Innovation One). 
 O objetivo original era integrar o Whisper e a API do ChatGPT para criar um assistente de voz multi-idiomas.
 
-##🚀 O Desafio:
+## 🚀 O Desafio:
 Durante o desenvolvimento, o desafio proposto utilizava a API da OpenAI. Devido a limitações financeiras para o uso de créditos e instabilidades em APIs externas, a arquitetura foi completamente adaptada.
 A solução final utiliza IA de borda (Edge AI), rodando modelos de linguagem de grande porte (LLMs) localmente no Google Colab. Isso torna o projeto 100% gratuito e funcional, sem depender de chaves externas ou saldo.
 
-##🛠️ Tecnologias e Bibliotecas Utilizadas
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
 Para que o sistema funcione de forma independente da nuvem, integramos bibliotecas de ponta no ecossistema Python:
 
 * **OpenAI Whisper:**
@@ -29,20 +29,20 @@ Função no projeto: Transforma a resposta de texto gerada pela IA de volta em �
 O que faz: Interfaces para o ambiente Jupyter.
 Função no projeto: Usado para criar a interface de gravação no navegador e o player de resposta.
 
-##🧠 Fluxo de Execução
+## 🧠 Fluxo de Execução
 
 1. Input: O usuário grava uma pergunta por voz via interface JavaScript no Colab.
 2. STT (Whisper): O áudio é transcrito localmente para texto.
 3. Processamento (LLM Local): O texto é enviado ao modelo Qwen2.5 (em substituição ao ChatGPT), que gera uma resposta inteligente.
 4. Output (gTTS): O texto da resposta é convertido em voz e reproduzido automaticamente.
 
-##🌟 Diferenciais deste Repositório
+## 🌟 Diferenciais deste Repositório
 
 Independência de API: Funciona sem necessidade de cartões de crédito ou faturas da OpenAI.
 Resiliência Técnica: Supera erros de rede e restrições de modelos fechados.
 Privacidade: O processamento da transcrição e do raciocínio é feito localmente no ambiente de execução.
 
-##📋 Como Rodar
+## 📋 Como Rodar
 1. Abra o notebook no Google Colab.
 2. Certifique-se de que o Acelerador de Hardware está definido como GPU T4.
 3. Execute todas as células em ordem.
